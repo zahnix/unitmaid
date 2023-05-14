@@ -6,6 +6,8 @@ import {
   Box,
   ButtonGroup,
   Button,
+  Radio,
+  RadioGroup,
   Heading,
   Flex,
   FormControl,
@@ -21,6 +23,7 @@ import {
   InputRightElement,
   Divider,
   VStack,
+  HStack,
   Text
 } from '@chakra-ui/react';
 
@@ -248,8 +251,29 @@ const Form2 = () => {
           <option>10x15 ft -- 150 sqft</option>
           <option>10x20 ft -- 200 sqft</option>
           <option>10x25 ft -- 250 sqft</option>
-          <option>10x30 ft -- 25 sqft</option>
+          <option>10x30 ft -- 300 sqft</option>
         </Select>
+      </FormControl>
+
+      <FormControl as='fieldset'>
+        <FormLabel pt={4}
+          htmlFor="unitType"
+          fontSize="sm"
+          fontWeight="md"
+          color="gray.700"
+          _dark={{
+            color: 'gray.50',
+          }}>
+          Storage Type
+        </FormLabel>
+        <RadioGroup defaultValue='Itachi'>
+        <HStack spacing='24px'>
+          <Radio value='Indoor'>Indoor</Radio>
+          <Radio value='Outdoor'>Outdoor</Radio>
+          <Radio value='Drive Up'>Drive up</Radio>
+          <Radio value='Self Storage'>Self Storage</Radio>
+        </HStack>
+        </RadioGroup>
       </FormControl>
 
       <FormControl as={GridItem} colSpan={6}>
