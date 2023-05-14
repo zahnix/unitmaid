@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+
 import {
   Progress,
   Box,
@@ -24,7 +25,10 @@ import {
   Divider,
   VStack,
   HStack,
-  Text
+  Text,
+  Checkbox,
+  CheckboxGroup,
+  Stack,
 } from '@chakra-ui/react';
 
 import { useToast } from '@chakra-ui/react';
@@ -266,7 +270,7 @@ const Form2 = () => {
           }}>
           Storage Type
         </FormLabel>
-        <RadioGroup defaultValue='Itachi'>
+        <RadioGroup colorScheme='green' defaultValue='Indoor'>
         <HStack spacing='24px'>
           <Radio value='Indoor'>Indoor</Radio>
           <Radio value='Outdoor'>Outdoor</Radio>
@@ -275,106 +279,78 @@ const Form2 = () => {
         </HStack>
         </RadioGroup>
       </FormControl>
-
-      <FormControl as={GridItem} colSpan={6}>
-        <FormLabel
-          htmlFor="street_address"
+      
+      <FormControl as='fieldset'>
+        <FormLabel pt={4}
+          htmlFor="unitType"
           fontSize="sm"
           fontWeight="md"
           color="gray.700"
           _dark={{
             color: 'gray.50',
-          }}
-          mt="2%">
-          Unit address
+          }}>
+          Unit Detail
         </FormLabel>
-        <Input
-          type="text"
-          name="street_address"
-          id="street_address"
-          autoComplete="street-address"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
+      <CheckboxGroup colorScheme='green' defaultValue={['24hr', 'cc']}>
+        <Stack spacing={[2, 4]} direction={['column', 'row']}>
+        <Checkbox value='24hr'>24hr</Checkbox>
+        <Checkbox value='cc'>Climate</Checkbox>
+        <Checkbox value='ag'>Above Ground</Checkbox>
+        <Checkbox value='elavator'>Elevators</Checkbox>
+        <Checkbox value='electricity'>Power</Checkbox>
+        </Stack>
+      </CheckboxGroup>
       </FormControl>
 
-      <FormControl as={GridItem} colSpan={[6, 6, null, 2]}>
-        <FormLabel
-          htmlFor="city"
+      <FormControl as='fieldset'>
+        <FormLabel pt={4}
+          htmlFor="unitType"
           fontSize="sm"
           fontWeight="md"
           color="gray.700"
           _dark={{
             color: 'gray.50',
-          }}
-          mt="2%">
-          City
+          }}>
+          Rate Preference
         </FormLabel>
-        <Input
-          type="text"
-          name="city"
-          id="city"
-          autoComplete="city"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
+        <RadioGroup colorScheme='green' defaultValue='Flat'>
+        <HStack spacing='24px'>
+          <Radio value='Flat'>Flat Fee</Radio>
+          <Radio value='Hourly'>Hourly</Radio>
+          <Radio value='Subs'>Subscription(Recurring)</Radio>
+        </HStack>
+        </RadioGroup>
       </FormControl>
 
-      <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
-        <FormLabel
-          htmlFor="state"
+      <FormControl as='fieldset'>
+        <FormLabel pt={4}
+          htmlFor="unitType"
           fontSize="sm"
           fontWeight="md"
           color="gray.700"
           _dark={{
             color: 'gray.50',
-          }}
-          mt="2%">
-          State / Province
+          }}>
+          Service Interested In
         </FormLabel>
-        <Input
-          type="text"
-          name="state"
-          id="state"
-          autoComplete="state"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
+      <CheckboxGroup colorScheme='green' defaultValue={['24hr', 'cc']}>
+        <Stack spacing={[2, 4]} direction={['column']}>
+        <Checkbox value='clean'>Storage Unit Cleaning</Checkbox>
+        <Checkbox value='organize'>Storage Unit Organizing</Checkbox>
+        <Checkbox value='relocate'>Storage Unit Relocation</Checkbox>
+        <Checkbox value='inventory'>Storage Unit Iventory Management</Checkbox>
+        <Checkbox value='recycle'>Storage Unit Recycling and Disposal</Checkbox>
+        <Checkbox value='relocate'>Storage Unit Consigment</Checkbox>
+        <Checkbox value='inventory'>Storage Unit Document Store</Checkbox>
+        <Checkbox value='recycle'>Storage Unit Heavy Item Removal</Checkbox>
+        <Checkbox value='relocate'>Storage Unit Pickup and Store</Checkbox>
+        <Checkbox value='inventory'>Storage Unit key management</Checkbox>
+        <Checkbox value='recycle'>Storage Unit Locksmith</Checkbox>
+        <Checkbox value='recycle'>Storage Unit Pest Control</Checkbox>
+        </Stack>
+      </CheckboxGroup>
       </FormControl>
 
-      <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
-        <FormLabel
-          htmlFor="postal_code"
-          fontSize="sm"
-          fontWeight="md"
-          color="gray.700"
-          _dark={{
-            color: 'gray.50',
-          }}
-          mt="2%">
-          ZIP / Postal
-        </FormLabel>
-        <Input
-          type="text"
-          name="postal_code"
-          id="postal_code"
-          autoComplete="postal-code"
-          focusBorderColor="brand.400"
-          shadow="sm"
-          size="sm"
-          w="full"
-          rounded="md"
-        />
-      </FormControl>
     </>
   );
 };
@@ -386,6 +362,44 @@ const Form3 = () => {
         Additional Information
       </Heading>
       <SimpleGrid columns={1} spacing={6}>
+      <FormControl as='fieldset'>
+        <FormLabel pt={4}
+          htmlFor="unitType"
+          fontSize="sm"
+          fontWeight="md"
+          color="gray.700"
+          _dark={{
+            color: 'gray.50',
+          }}>
+          Rush Service?
+        </FormLabel>
+        <RadioGroup colorScheme='green' defaultValue='no'>
+        <HStack spacing='24px'>
+          <Radio value='yes'>Yes</Radio>
+          <Radio value='no'>No</Radio>
+        </HStack>
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl as='fieldset'>
+        <FormLabel pt={4}
+          htmlFor="unitType"
+          fontSize="sm"
+          fontWeight="md"
+          color="gray.700"
+          _dark={{
+            color: 'gray.50',
+          }}>
+          Is there a deadline for this project?
+        </FormLabel>
+        <RadioGroup colorScheme='green' defaultValue='no'>
+        <HStack spacing='24px'>
+          <Radio value='yes'>Yes</Radio>
+          <Radio value='no'>No</Radio>
+        </HStack>
+        </RadioGroup>
+      </FormControl>
+
         <FormControl as={GridItem} colSpan={[3, 2]}>
           <FormLabel
             fontSize="sm"
@@ -394,28 +408,18 @@ const Form3 = () => {
             _dark={{
               color: 'gray.50',
             }}>
-            Website
+            Prefer date of service
           </FormLabel>
           <InputGroup size="sm">
-            <InputLeftAddon
-              bg="gray.50"
-              _dark={{
-                bg: 'gray.800',
-              }}
-              color="gray.500"
-              rounded="md">
-              http://
-            </InputLeftAddon>
             <Input
-              type="tel"
-              placeholder="www.example.com"
+              type="date"
               focusBorderColor="brand.400"
               rounded="md"
             />
           </InputGroup>
         </FormControl>
 
-        <FormControl id="email" mt={1}>
+        <FormControl id="additional" mt={1}>
           <FormLabel
             fontSize="sm"
             fontWeight="md"
@@ -423,10 +427,10 @@ const Form3 = () => {
             _dark={{
               color: 'gray.50',
             }}>
-            About
+            Additional details
           </FormLabel>
           <Textarea
-            placeholder="you@example.com"
+            placeholder="Any thing else?"
             rows={3}
             shadow="sm"
             focusBorderColor="brand.400"
@@ -435,7 +439,7 @@ const Form3 = () => {
             }}
           />
           <FormHelperText>
-            Brief description for your profile. URLs are hyperlinked.
+            Brief Additional Details if needed.
           </FormHelperText>
         </FormControl>
       </SimpleGrid>
