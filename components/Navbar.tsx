@@ -15,7 +15,6 @@ import {
   Image,
   useBreakpointValue,
   useDisclosure,
-  Tooltip,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -63,11 +62,6 @@ export default function Navbar() {
             <DesktopNav />
           </Flex>
         </Flex>
-        <Stack>
-          <Tooltip label='218-275-9671' fontSize='md'>
-            <PhoneIcon color={'green.500'} marginRight={6} marginLeft={10}/>
-          </Tooltip >
-        </Stack>
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
