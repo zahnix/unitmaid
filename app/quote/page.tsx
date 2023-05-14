@@ -340,13 +340,13 @@ const Form2 = () => {
         <Checkbox value='relocate'>Storage Unit Relocation</Checkbox>
         <Checkbox value='inventory'>Storage Unit Iventory Management</Checkbox>
         <Checkbox value='recycle'>Storage Unit Recycling and Disposal</Checkbox>
-        <Checkbox value='relocate'>Storage Unit Consigment</Checkbox>
-        <Checkbox value='inventory'>Storage Unit Document Store</Checkbox>
-        <Checkbox value='recycle'>Storage Unit Heavy Item Removal</Checkbox>
-        <Checkbox value='relocate'>Storage Unit Pickup and Store</Checkbox>
-        <Checkbox value='inventory'>Storage Unit key management</Checkbox>
-        <Checkbox value='recycle'>Storage Unit Locksmith</Checkbox>
-        <Checkbox value='recycle'>Storage Unit Pest Control</Checkbox>
+        <Checkbox value='consign'>Storage Unit Consigment</Checkbox>
+        <Checkbox value='document'>Storage Unit Document Store</Checkbox>
+        <Checkbox value='heavy'>Storage Unit Heavy Item Removal</Checkbox>
+        <Checkbox value='pickup'>Storage Unit Pickup and Store</Checkbox>
+        <Checkbox value='keymngt'>Storage Unit key management</Checkbox>
+        <Checkbox value='locksmith'>Storage Unit Locksmith</Checkbox>
+        <Checkbox value='pest'>Storage Unit Pest Control</Checkbox>
         </Stack>
       </CheckboxGroup>
       </FormControl>
