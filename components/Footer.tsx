@@ -111,10 +111,10 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
-            <Link href={'#'}>Facebook</Link>
-            <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Instagram</Link>
-            <Link href={'#'}>Youtube</Link>
+            <Link href={'https://www.facebook.com/UnitMaid-111388498624712'}>Facebook</Link>
+            <Link href={'https://twitter.com/unitmaid'}>Twitter</Link>
+            <Link href={'https://www.instagram.com/unitmaid/'}>Instagram</Link>
+            <Link href={'https://www.youtube.com/@unitmaid'}>Youtube</Link>
             <Link href={'#'}>LinkedIn</Link>
           </Stack>
         </SimpleGrid>
