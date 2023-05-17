@@ -42,14 +42,14 @@ export default function JobsSlideshow() {
     {
       title: 'Organizing Ultra Space on Chantilly',
       text:
-        "We Turned a 10'x30' size 2nd Floor Unit for a construction brick and motar store into a beauty",
+        "Reorganized a 10'x30' unit for a ceramic workshop",
       image:
         'https://images.unsplash.com/photo-1527849214787-c99cd25c2f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1636&q=80',
     },
     {
       title: 'Cleaning Public Storage Unit In Alexandria',
       text:
-        "Cleaned out and organized a storage unit for a Non Profit food cans storage",
+        "Cleaned out, and organized a residential Garage",
       image:
         'https://www.westcoastselfstorage.com/wp-content/uploads/2020/03/messy-storage-unit.jpg',
     },
