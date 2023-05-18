@@ -45,21 +45,21 @@ const Form1 = () => {
       <Flex>
         <FormControl mr="5%">
           <FormLabel htmlFor="first-name" fontWeight={'normal'}>
-            First name
+            First name*
           </FormLabel>
           <Input id="first-name" placeholder="First name" />
         </FormControl>
 
         <FormControl>
           <FormLabel htmlFor="last-name" fontWeight={'normal'}>
-            Last name
+            Last name*
           </FormLabel>
           <Input id="last-name" placeholder="First name" />
         </FormControl>
       </Flex>
       <FormControl mt="2%">
         <FormLabel htmlFor="email" fontWeight={'normal'}>
-          Email address
+          Email address*
         </FormLabel>
         <Input id="email" type="email" />
         <FormHelperText>We will never share your email.</FormHelperText>
@@ -67,7 +67,7 @@ const Form1 = () => {
 
       <FormControl mt="2%">
         <FormLabel htmlFor="email" fontWeight={'normal'}>
-          Phone Number
+          Phone Number*
         </FormLabel>
         <Input id="phone" type="phone" />
       </FormControl>
@@ -127,7 +127,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          Unit address
+          Unit address*
         </FormLabel>
         <Input
           type="text"
@@ -152,7 +152,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          City
+          City*
         </FormLabel>
         <Input
           type="text"
@@ -177,7 +177,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          State / Province
+          State / Province*
         </FormLabel>
         <Input
           type="text"
@@ -202,7 +202,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          ZIP / Postal
+          ZIP / Postal*
         </FormLabel>
         <Input
           type="text"
@@ -237,7 +237,7 @@ const Form2 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Select Storage Size
+          Select Storage Size*
         </FormLabel>
         <Select
           id="unitSize"
@@ -256,6 +256,8 @@ const Form2 = () => {
           <option>10x20 ft -- 200 sqft</option>
           <option>10x25 ft -- 250 sqft</option>
           <option>10x30 ft -- 300 sqft</option>
+          <option>1 Car Garage 12x25 ft -- 300 sqft</option>
+          <option>2 Car Garage 24x25 ft -- 600 sqft</option>
         </Select>
       </FormControl>
 
@@ -311,7 +313,7 @@ const Form2 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Rate Preference
+          Rate Preference*
         </FormLabel>
         <RadioGroup colorScheme='green' defaultValue='Flat'>
         <HStack spacing='24px'>
@@ -371,7 +373,7 @@ const Form3 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Rush Service?
+          Rush Service?*
         </FormLabel>
         <RadioGroup colorScheme='green' defaultValue='no'>
         <HStack spacing='24px'>
@@ -390,7 +392,7 @@ const Form3 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Is there a deadline for this project?
+          Project has deadline?*
         </FormLabel>
         <RadioGroup colorScheme='green' defaultValue='no'>
         <HStack spacing='24px'>
@@ -430,8 +432,9 @@ const Form3 = () => {
             Additional details
           </FormLabel>
           <Textarea
-            placeholder="Any thing else?"
-            rows={3}
+            placeholder="Anything else?"
+            rows={6}
+            size={'lg'}
             shadow="sm"
             focusBorderColor="brand.400"
             fontSize={{
