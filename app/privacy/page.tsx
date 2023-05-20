@@ -129,11 +129,11 @@ export default function Privacy() {
               we collect the information for the following purposes:
               </Text>
               <List pt={'4'} spacing={2}>
-                  <ListItem>- To provide you with, process payment for, and manage services you request.</ListItem>
+                  <ListItem>- To provide you with the services, to process payment for the services, and manage services you request.</ListItem>
                   <ListItem>- To provide you with ongoing customer support and effective customer service.</ListItem>
                   <ListItem>- To enable you to provide us with feedback, participate in surveys, and contact us, and for us to contact you.</ListItem>{' '}
                   <ListItem>- To administer promotions you enter, such as a contest or sweepstakes.</ListItem>
-                  <ListItem>- To send you communications of interest, such as emails or text messages about ServiceMaster, its affiliates, and franchises and our services.</ListItem>
+                  <ListItem>- To send you communications of interest, such as emails or text messages about UnitMaid services, and our Affiliates.</ListItem>
                   <ListItem>- To personalize your overall experience with the Site.</ListItem>
                   <ListItem>- To customize, measure, and improve our Site, products, services, content, and advertising.</ListItem>
                   <ListItem>- To protect, enforce, or defend the legal rights, privacy, safety, or property of ourselves, our employees, our agents, or others, and to comply with applicable law.</ListItem>
