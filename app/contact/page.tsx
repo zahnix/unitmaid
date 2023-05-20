@@ -1,6 +1,8 @@
 "use client"
 
+import NextLink from 'next/link'
 import {
+  Link,
   Container,
   Flex,
   Box,
@@ -25,7 +27,7 @@ import {
   MdFacebook,
   MdOutlineEmail,
 } from 'react-icons/md';
-import { BsInstagram, BsWhatsapp, BsPerson } from 'react-icons/bs';
+import { BsInstagram, BsTwitter, BsPerson } from 'react-icons/bs';
 
 
 export default function contact() {
@@ -86,6 +88,7 @@ export default function contact() {
                     spacing={5}
                     px={5}
                     pl={9}>
+                    <Link as={NextLink} href='https://www.facebook.com/UnitMaid-111388498624712'>
                     <IconButton
                       aria-label="facebook"
                       variant="ghost"
@@ -94,22 +97,27 @@ export default function contact() {
                       _hover={{ bg: 'green.500' }}
                       icon={<MdFacebook size="28px" />}
                     />
+                    </Link>
+                    <Link as={NextLink} href='https://www.instagram.com/unitmaid/'>
                     <IconButton
-                      aria-label="github"
-                      variant="ghost"
+                      aria-label="instagram"
+                      variant="insta"
                       size="lg"
                       isRound={true}
                       _hover={{ bg: 'green.500' }}
                       icon={<BsInstagram size="28px" />}
                     />
+                    </Link>
+                    <Link as={NextLink} href='https://twitter.com/unitmaid'>
                     <IconButton
-                      aria-label="discord"
-                      variant="ghost"
+                      aria-label="twitter"
+                      variant="twitt"
                       size="lg"
                       isRound={true}
                       _hover={{ bg: 'green.500' }}
-                      icon={<BsWhatsapp size="28px" />}
+                      icon={<BsTwitter size="28px" />}
                     />
+                    </Link>
                   </HStack>
                 </Box>
               </WrapItem>

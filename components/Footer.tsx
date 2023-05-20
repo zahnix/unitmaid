@@ -103,8 +103,7 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Legal</ListHeader>
-            <Link href={'#'}>Cookies Policy</Link>
-            <Link href={'#'}>Privacy Policy</Link>
+            <Link href={'/privacy'}>Privacy Policy</Link>
             <Link href={'#'}>Terms of Service</Link>
             <Link href={'#'}>Law Enforcement</Link>
             <Link href={'#'}>Status</Link>
