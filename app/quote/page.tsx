@@ -462,7 +462,7 @@ export default function Quote() {
         UnitMaid Service Inquiry Form
         </Heading>
         <Text fontSize="lg" color={'gray.500'}>
-        The experts in organization, cleanliness, and all thing storage.
+        The experts in organization, cleanliness, and all things storage.
         </Text>
       </VStack>
       <Box

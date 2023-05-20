@@ -70,7 +70,7 @@ export default function About() {
                 Our Mission
               </Text>
               <Text fontSize={'lg'}>
-              To provide customized, affordable, and comprehensive storage management solutions that prioritize sustainability and accessibility, while delivering exceptional customer service and convenience.
+              To provide customized, affordable, comprehensive storage management solutions prioritizing sustainability and accessibility while delivering exceptional customer service and convenience.
               </Text>
             </Box>
             <Box>
@@ -83,7 +83,7 @@ export default function About() {
                 Our Vision
               </Text>
               <Text fontSize={'lg'}>
-              To be the leading storage management company, offering a comprehensive range of customizable services that help our customers save time, money, and energy, while reducing their environmental footprint.
+              To be the leading storage management company, offering a comprehensive range of customizable services that help our customers save time, money, and energy while reducing their environmental footprint.
               </Text>
             
             </Box>
@@ -115,7 +115,7 @@ export default function About() {
       </SimpleGrid>
       <Stack pt={6} pb={9} direction="row" alignItems="center" justifyContent={'center'}>
             <MdLocalShipping />
-            <Text>We are servicing the Northern Va area</Text>
+            <Text>We are servicing the Northern VA area</Text>
           </Stack>
     </Container>
   );

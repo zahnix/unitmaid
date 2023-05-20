@@ -70,10 +70,7 @@ export default function Services() {
           content='center'
         />
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-        UnitMaid provides a variety of storage management services, 
-        including unit cleaning, organization, and relocation. 
-        We also offer a pick-up service to add more items to the storage unit. 
-        Our services are designed to help individuals and businesses efficiently manage their storage needs.
+        UnitMaid provides various storage management services, including cleaning, organization, and relocation. We also offer a pick-up service to add more items to the storage unit. Our services will help individuals and businesses efficiently manage their storage needs.
         </Text>
       </Stack>
 
@@ -83,7 +80,7 @@ export default function Services() {
             heading={'Storage Unit Cleaning and Organization'}
             icon={<Icon as={FcOrganization} w={10} h={10} />}
             description={
-              'We Offer professional cleaning services to ensure your units are always clean and free of dust, dirt, and debris. Our team of experts uses high-quality products and equipment to ensure that your storage unit is spotless and will categorize and arrange items according to your preferences and needs.'
+              'We offer professional cleaning services to ensure your units are always clean and free of dust, dirt, and debris. Our team of experts uses high-quality products and equipment to ensure that your storage unit is spotless and will categorize and arrange items according to your preferences and needs.'
             }
             href={'#'}
           />
@@ -91,7 +88,7 @@ export default function Services() {
             heading={'Storage Unit Inventory Management'}
             icon={<Icon as={FcFilingCabinet} w={10} h={10} />}
             description={
-              'We keep track of the items in your storage unit. This includes creating an inventory list and periodically checking to ensure that all items are accounted for. We also offer specialized document storage that includes secure document storage, shredding and disposal, and retrieval services.'
+              'We keep track of the items in your storage unit. We create an inventory list and periodically check to ensure all items are cataloged. We also offer specialized document storage, including secure document storage, shredding and disposal, and retrieval services.'
             }
             href={'#'}
           />
@@ -99,7 +96,7 @@ export default function Services() {
             heading={'Storage Unit Relocation'}
             icon={<Icon as={FcDownRight} w={10} h={10} />}
             description={
-              'We provide a hassle-free storage unit relocation service for customers who need to move their items to a new storage unit. Our team of professional movers will handle all aspects of the relocation process, from packing and loading to transport and unloading'
+              'We provide a hassle-free storage unit relocation service for customers who need to move their items to a new storage unit. Our team of professional movers will handle all aspects of the relocation process, from packing and loading to transport and unloading.'
             }
             href={'#'}
           />
@@ -107,7 +104,7 @@ export default function Services() {
             heading={'Storage Pick-up service'}
             icon={<Icon as={FcShipped} w={10} h={10} />}
             description={
-              'We make it easy for you to add items to your storage unit without having to worry about transportation or heavy lifting. Whether you have new items to store or just need to rearrange your existing items, our team can help.'
+              'We make adding items to your storage unit easy without worrying about transportation or heavy lifting. Whether you have new things to store or need to rearrange your existing items, our team can help.'
             }
             href={'#'}
           />
@@ -115,7 +112,7 @@ export default function Services() {
             heading={'Donations, Recycling and Disposal'}
             icon={<Icon as={FcGlobe} w={10} h={10} />}
             description={
-              'We assist customers with the removal of heavy or bulky items(furniture, appliances, and other large items). Recycling and disposal services for customers who need to dispose of unwanted items or materials.'
+              'We assist customers with removing heavy or bulky items(furniture, appliances, and other large items)—recycling and disposal services for customers who need to dispose of unwanted items or materials.'
             }
             href={'#'}
           />
@@ -123,7 +120,7 @@ export default function Services() {
             heading={'Specialty Services'}
             icon={<Icon as={FcAssistant} w={10} h={10} />}
             description={
-              'We offer specialty services like consignment, Locksmith and key management. Pest control inspections and treatments to prevent and eliminate pests and Package acceptance and delivery services for customers who need to receive or send packages to their storage unit.'
+              'We offer specialty services like consignment, Locksmith, and key management. Pest control inspections and treatments to prevent and eliminate pests and Package acceptance and delivery services for customers who need to receive or send packages to their storage unit.'
             }
             href={'#'}
           />

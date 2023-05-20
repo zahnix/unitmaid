@@ -52,7 +52,7 @@ export default function Footer() {
               </Tag>
             </Stack>
             <Stack direction={'row'} align={'center'} spacing={2}>
-              <Link href={'#'}>Iventory Management</Link>
+              <Link href={'#'}>Inventory Management</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('green.300', 'green.800')}

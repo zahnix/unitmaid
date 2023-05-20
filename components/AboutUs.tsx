@@ -93,7 +93,7 @@ const stats = [
     title: 'Affordable',
     content: (
       <>
-        <StatsText>Storage Cleaning</StatsText> We are committed to providing the highest quality cleaning and organizing services. Our experts team will clean, dust off, or debris that may have accumulated over time
+        <StatsText>Storage Cleaning</StatsText> We are committed to providing the highest quality cleaning and organizing services. Our expert team will clean and dust off debris that may have accumulated over time.
       </>
     ),
   },
@@ -102,7 +102,7 @@ const stats = [
     content: (
       <>
         <StatsText>Unit Organization</StatsText> Maximize the space in your storage unit
-        by organizing your belongings in a efficient and logical manner and make it easier for you to access your stored belongings. 
+        by organizing your belongings in an efficient and logical manner and make it easier for you to access your stored belongings. 
       </>
     ),
   },
@@ -110,8 +110,7 @@ const stats = [
     title: 'Regional',
     content: (
       <>
-        <StatsText>Relocation Assistance</StatsText> Whether you are moving your belongings into or out of storage,
-         we can help make the process quick and easy.
+        <StatsText>Relocation Assistance</StatsText> Whether you are moving your belongings into or out of storage, we make the process quick and easy.
       </>
     ),
   },
@@ -119,7 +118,7 @@ const stats = [
     title: '24/7',
     content: (
       <>
-        <StatsText>Pickup Services</StatsText> We will come to your home or office to pick up any items you need to store, so you do not have to worry about transporting them yourself.
+        <StatsText>Pickup Services</StatsText> We will come to your home or office to pick up any items you need to store. We will do the heaving lifting, while you sit back and relax.
       </>
     ),
   },

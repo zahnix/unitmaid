@@ -59,9 +59,7 @@ export default function Values() {
           </Text>
           <Heading>Your Unit Is In Good Hands</Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
-          Our mission is to make our customers lives easier by 
-          taking care of their storage needs so they can focus 
-          on what matters most to them. We offer a comprehensive range of customizable services that help our customers save time, money, and energy, while reducing their environmental footprint.
+          Our mission is to simplify our customers lives by taking care of their storage needs so they can focus on what matters most to them. We offer a comprehensive range of customizable services that help our customers save time, money, and energy while reducing their environmental footprint.
           </Text>
           <Stack
             spacing={4}

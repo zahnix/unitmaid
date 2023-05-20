@@ -75,7 +75,7 @@ export default function Services() {
                 color={useColorModeValue('gray.500', 'gray.400')}
                 fontSize={'2xl'}
                 fontWeight={'300'}>
-                We are a Northern Virginia based professional storage cleaning service company that offers a variety of services to help you manage your storage units. 
+                We are a Northern Virginia professional storage cleaning service company that offers a range of services to help you manage your storage units. UnitMaid provides comprehensive storage unit solutions tailored to the specific needs of each client. Whether it is cleaning out clutter, categorizing and organizing items, or relocating belongings to a new storage unit, UnitMaid aims to simplify the storage management process and provide a hassle-free experience for our customers. 
               </Text>
             </VStack>
             <Box>
@@ -159,23 +159,20 @@ export default function Services() {
               lineHeight={1.1}
               fontWeight={500}
               fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
-              Frequently Asked Question
+              Frequently Asked Question(FAQs)
             </Heading>
         <Accordion>
   <AccordionItem>
     <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='left'>
-          How quick do you deliver the service?
+        Can UnitMaid help with packing and unpacking items in the storage unit?
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    Yes, our team can assist with packing and unpacking items in your storage unit, ensuring they are properly organized and protected.
     </AccordionPanel>
   </AccordionItem>
 
@@ -183,52 +180,93 @@ export default function Services() {
     <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='left'>
-          Are the price negotiable?
+        Does UnitMaid offer assistance with inventory management for the storage unit?
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    Yes, we can help you create and maintain an inventory list of the items stored in your unit for easy tracking and retrieval.
     </AccordionPanel>
   </AccordionItem>
   <AccordionItem>
     <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='left'>
-          How often do you pick up documents for shredding?
+        Are there any additional fees or charges I should be aware of?
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    Our pricing structure is comprehensive, and there are no hidden fees or additional charges. The quoted price covers the services specified.
     </AccordionPanel>
   </AccordionItem>
   <AccordionItem>
     <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='left'>
-          Are your product Eco-Friendly
+        Do I need to be present at the storage unit during the service?
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    It is not necessary for you to be present during the service. We can coordinate access with the storage facility, ensuring a convenient experience.
     </AccordionPanel>
   </AccordionItem>
-
-
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        How long does a typical service session take?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    The duration of a service session depends on the size of the storage unit and the specific requirements. We strive to complete the service efficiently.
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        Can UnitMaid accommodate special requests or specific cleaning preferences?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    Yes, we are flexible and can accommodate special requests or specific cleaning preferences to meet your needs and preferences.
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        How do I book a service with UnitMaid? Is there an online booking system?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    You can easily book a service with UnitMaid by visiting our website or contacting our customer service. We have a user-friendly online booking system for your convenience.
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        How do I book a service with UnitMaid using the online booking system?
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    To be able to book online, register and create an account. Once the account has been verified, you will be able to use the online booking system.
+    </AccordionPanel>
+  </AccordionItem>
         </Accordion>
         </Stack>
     </Container>
