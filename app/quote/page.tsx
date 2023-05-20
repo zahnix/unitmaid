@@ -82,7 +82,7 @@ const Form1 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          North Virginia Region
+          Northern Virginia Region
         </FormLabel>
         <Select
           id="region"
