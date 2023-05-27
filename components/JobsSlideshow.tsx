@@ -40,7 +40,7 @@ export default function JobsSlideshow() {
   // This can be static or loaded from a server
   const cards = [
     {
-      title: 'Organizing Ultra Space on Chantilly',
+      title: 'Organized UltraSpace on Chantilly',
       text:
         "Reorganized a 10'x30' unit for a ceramic workshop",
       image:

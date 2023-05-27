@@ -101,7 +101,7 @@ const stats = [
     title: 'Comprehensive',
     content: (
       <>
-        <StatsText>Unit Organization</StatsText> Maximize the space in your storage unit
+        <StatsText>Unit Organization</StatsText> Maximize the space in your unit
         by organizing your belongings in an efficient and logical manner and make it easier for you to access your stored belongings. 
       </>
     ),

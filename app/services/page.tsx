@@ -75,7 +75,7 @@ export default function Services() {
                 color={useColorModeValue('gray.500', 'gray.400')}
                 fontSize={'2xl'}
                 fontWeight={'300'}>
-                We are a Northern Virginia professional storage cleaning service company that offers a range of services to help you manage your storage units. UnitMaid provides comprehensive storage unit solutions tailored to the specific needs of each client. Whether it is cleaning out clutter, categorizing and organizing items, or relocating belongings to a new storage unit, UnitMaid aims to simplify the storage management process and provide a hassle-free experience for our customers. 
+                We are a Northern Virginia professional storage cleaning service company that offers a range of services to help you manage your storage unit, garage, warehouse, and office. UnitMaid provides comprehensive solutions tailored to the specific needs of each client. Whether it is cleaning out clutter, categorizing and organizing items, or relocating belongings to a new unit, UnitMaid aims to simplify the storage management process and provide a hassle-free experience for our customers. 
               </Text>
             </VStack>
             <Box>

@@ -58,8 +58,8 @@ export default function HeroSection() {
         />
           </Heading>
           <Text paddingTop={-2}fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-          At UnitMaid™, we offer a range of services to help you keep your 
-          storage unit clean, organized, and accessible.
+          At UnitMaid™, we offer various services to help you keep your 
+          storage unit, garage, warehouse, or office clean, organized, and accessible.
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Link as={NextLink} href='/quote'>

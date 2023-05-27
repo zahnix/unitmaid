@@ -258,6 +258,8 @@ const Form2 = () => {
           <option>10x30 ft -- 300 sqft</option>
           <option>1 Car Garage 12x25 ft -- 300 sqft</option>
           <option>2 Car Garage 24x25 ft -- 600 sqft</option>
+          <option>Office</option>
+          <option>Warehouse</option>
         </Select>
       </FormControl>
 
@@ -319,7 +321,6 @@ const Form2 = () => {
         <HStack spacing='24px'>
           <Radio value='Flat'>Flat Fee</Radio>
           <Radio value='Hourly'>Hourly</Radio>
-          <Radio value='Subs'>Subscription(Recurring)</Radio>
         </HStack>
         </RadioGroup>
       </FormControl>
@@ -337,18 +338,18 @@ const Form2 = () => {
         </FormLabel>
       <CheckboxGroup colorScheme='green' defaultValue={['24hr', 'cc']}>
         <Stack spacing={[2, 4]} direction={['column']}>
-        <Checkbox value='clean'>Storage Unit Cleaning</Checkbox>
-        <Checkbox value='organize'>Storage Unit Organizing</Checkbox>
-        <Checkbox value='relocate'>Storage Unit Relocation</Checkbox>
-        <Checkbox value='inventory'>Storage Unit Iventory Management</Checkbox>
-        <Checkbox value='recycle'>Storage Unit Recycling and Disposal</Checkbox>
-        <Checkbox value='consign'>Storage Unit Consigment</Checkbox>
-        <Checkbox value='document'>Storage Unit Document Store</Checkbox>
-        <Checkbox value='heavy'>Storage Unit Heavy Item Removal</Checkbox>
-        <Checkbox value='pickup'>Storage Unit Pickup and Store</Checkbox>
-        <Checkbox value='keymngt'>Storage Unit key management</Checkbox>
-        <Checkbox value='locksmith'>Storage Unit Locksmith</Checkbox>
-        <Checkbox value='pest'>Storage Unit Pest Control</Checkbox>
+        <Checkbox value='clean'>Cleaning</Checkbox>
+        <Checkbox value='organize'>Organization</Checkbox>
+        <Checkbox value='relocate'>Relocation</Checkbox>
+        <Checkbox value='inventory'>Iventory Management</Checkbox>
+        <Checkbox value='recycle'>Recycling and Disposal</Checkbox>
+        <Checkbox value='consign'>Consigment</Checkbox>
+        <Checkbox value='document'>Document Store</Checkbox>
+        <Checkbox value='heavy'>Heavy Item Removal</Checkbox>
+        <Checkbox value='pickup'>Pickup and Store</Checkbox>
+        <Checkbox value='keymngt'>Key management</Checkbox>
+        <Checkbox value='locksmith'>Locksmith</Checkbox>
+        <Checkbox value='pest'>Pest Control</Checkbox>
         </Stack>
       </CheckboxGroup>
       </FormControl>
