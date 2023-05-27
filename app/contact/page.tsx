@@ -45,11 +45,11 @@ export default function contact() {
               <WrapItem>
                 <Box>
                   <Heading textAlign={'center'}>Contact Our Team</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="white">
-                    Fill up the form below to contact
+                  <Text textAlign={'center'} mt={{ sm: 3, md: 3, lg: 5 }} color="black">
+                    Fill up the form to contact us
                   </Text>
-                  <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                    <VStack pl={9} spacing={3} alignItems="flex-start">
+                  <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }} pb={'-9'}>
+                    <VStack spacing={3} alignItems="center" pb={'5'}>
                       <Button
                         size="md"
                         height="48px"
@@ -59,7 +59,7 @@ export default function contact() {
                         _hover={{ 
                           border: '3px solid green' }}
                         leftIcon={<MdPhone color="green" size="16px" />}>
-                        (218)275-9671
+                        (703)424-2905
                       </Button>
                       <Button
                         size="md"
@@ -82,14 +82,12 @@ export default function contact() {
                         Northern VA
                       </Button>
                     </VStack>
-                  </Box>
-                  <HStack
-                    mt={{ lg: 10, md: 10 }}
+                    <HStack
                     spacing={5}
-                    px={5}
-                    pl={9}>
+                    justifyContent={'center'}>
                     <Link as={NextLink} href='https://www.facebook.com/UnitMaid-111388498624712'>
                     <IconButton
+                      mr={'5'}
                       aria-label="facebook"
                       variant="ghost"
                       size="lg"
@@ -100,6 +98,7 @@ export default function contact() {
                     </Link>
                     <Link as={NextLink} href='https://www.instagram.com/unitmaid/'>
                     <IconButton
+                      mr={'5'}
                       aria-label="instagram"
                       variant="insta"
                       size="lg"
@@ -119,25 +118,26 @@ export default function contact() {
                     />
                     </Link>
                   </HStack>
+                  </Box>
                 </Box>
               </WrapItem>
               <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
-                      <FormControl id="name">
+                      <FormControl isRequired id="name">
                         <FormLabel>Your Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
-                          <Input type="text" size="md" />
+                          <Input type="text" size="lg" />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
+                      <FormControl isRequired id="name">
                         <FormLabel>Mail</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
-                          <Input type="text" size="md" />
+                          <Input type="text" size="lg" />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
+                      <FormControl isRequired id="name">
                         <FormLabel>Message</FormLabel>
                         <Textarea
                           borderColor="gray.300"
@@ -145,6 +145,7 @@ export default function contact() {
                             borderRadius: 'gray.300',
                           }}
                           placeholder="message"
+                          size={'lg'}
                         />
                       </FormControl>
                       <FormControl pl={9} id="name" float="right">
