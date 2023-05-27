@@ -67,17 +67,6 @@ export default function Navbar() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-            <Button
-              size="md"
-              height="48px"
-              width="210px"
-              variant="ghost"
-              color="black"
-              _hover={{ 
-              border: '3px solid green' }}
-              leftIcon={<PhoneIcon color="green" />}>
-              (703)424-2905
-            </Button>
           <Button
             as={'a'}
             fontSize={'sm'}

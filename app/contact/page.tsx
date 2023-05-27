@@ -1,170 +1,180 @@
 "use client"
 
-import NextLink from 'next/link'
 import {
-  Link,
-  Container,
-  Flex,
   Box,
-  Heading,
-  Text,
-  IconButton,
   Button,
-  VStack,
-  HStack,
-  Wrap,
-  WrapItem,
+  Flex,
   FormControl,
   FormLabel,
+  Heading,
+  IconButton,
   Input,
   InputGroup,
+  InputLeftElement,
+  Link,
+  Stack,
   Textarea,
+  Tooltip,
+  useClipboard,
+  useColorModeValue,
+  VStack,
 } from '@chakra-ui/react';
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from 'react-icons/md';
-import { BsInstagram, BsTwitter, BsPerson } from 'react-icons/bs';
+import React from 'react';
+import { BsFacebook, BsInstagram, BsPerson, BsTwitter } from 'react-icons/bs';
+import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 
+export default function ContactFormWithSocialButtons() {
+  const { hasCopied, onCopy } = useClipboard('support@unitmaid.com');
 
-export default function contact() {
   return (
-    <Container bg="#fff" maxW="full" mt={0} centerContent overflow="hidden">
-      <Flex>
-        <Box
-          bg="white"
-          color="black"
-          borderRadius="lg"
-          m={{ sm: 4, md: 16, lg: 10 }}
-          p={{ sm: 5, md: 5, lg: 16 }}>
-          <Box p={4}>
-            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
-              <WrapItem>
-                <Box>
-                  <Heading textAlign={'center'}>Contact Our Team</Heading>
-                  <Text textAlign={'center'} mt={{ sm: 3, md: 3, lg: 5 }} color="black">
-                    Fill up the form to contact us
-                  </Text>
-                  <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }} pb={'-9'}>
-                    <VStack spacing={3} alignItems="center" pb={'5'}>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="210px"
-                        variant="ghost"
-                        color="black"
-                        _hover={{ 
-                          border: '3px solid green' }}
-                        leftIcon={<MdPhone color="green" size="16px" />}>
-                        (703)424-2905
-                      </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="210px"
-                        variant="ghost"
-                        color="black"
-                        _hover={{ border: '3px solid green' }}
-                        leftIcon={<MdEmail color="green" size="16px" />}>
-                        support@unitmaid.com
-                      </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="210px"
-                        variant="ghost"
-                        color="black"
-                        _hover={{ border: '3px solid green' }}
-                        leftIcon={<MdLocationOn color="green" size="16px" />}>
-                        Northern VA
-                      </Button>
-                    </VStack>
-                    <HStack
-                    spacing={5}
-                    justifyContent={'center'}>
-                    <Link as={NextLink} href='https://www.facebook.com/UnitMaid-111388498624712'>
-                    <IconButton
-                      mr={'5'}
-                      aria-label="facebook"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: 'green.500' }}
-                      icon={<MdFacebook size="28px" />}
+    <Flex
+      bg={useColorModeValue('white', 'white')}
+      align="center"
+      justify="center"
+      id="contact">
+      <Box
+        borderRadius="lg"
+        m={{ base: 5, md: 16, lg: 10 }}
+        p={{ base: 5, lg: 16 }}>
+        <Box>
+          <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+            <Heading
+              fontSize={{
+                base: '4xl',
+                md: '5xl',
+              }}>
+              Get in Touch
+            </Heading>
+
+            <Stack
+              spacing={{ base: 4, md: 8, lg: 20 }}
+              direction={{ base: 'column', md: 'row' }}>
+              <Stack
+                align="center"
+                justify="space-around"
+                direction={{ base: 'row', md: 'column' }}>
+                <Tooltip
+                  label={hasCopied ? 'Email Copied!' : 'Copy Email'}
+                  closeOnClick={false}
+                  hasArrow>
+                  <IconButton
+                    aria-label="email"
+                    variant="ghost"
+                    size="lg"
+                    fontSize="3xl"
+                    icon={<MdEmail />}
+                    _hover={{
+                      bg: 'green.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    onClick={onCopy}
+                    isRound
+                  />
+                </Tooltip>
+
+                <Link href="https://www.facebook.com/UnitMaid-111388498624712">
+                  <IconButton
+                    aria-label="github"
+                    variant="ghost"
+                    size="lg"
+                    fontSize="3xl"
+                    icon={<BsFacebook />}
+                    _hover={{
+                      bg: 'green.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
+
+                <Link href="https://twitter.com/unitmaid">
+                  <IconButton
+                    aria-label="twitter"
+                    variant="ghost"
+                    size="lg"
+                    icon={<BsTwitter size="28px" />}
+                    _hover={{
+                      bg: 'green.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
+
+                <Link href="https://www.instagram.com/unitmaid/">
+                  <IconButton
+                    aria-label="instagram"
+                    variant="ghost"
+                    size="lg"
+                    icon={<BsInstagram size="28px" />}
+                    _hover={{
+                      bg: 'green.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
+              </Stack>
+
+              <Box
+                bg={useColorModeValue('white', 'gray.700')}
+                borderRadius="lg"
+                p={8}
+                color={useColorModeValue('gray.700', 'whiteAlpha.900')}
+                shadow="base">
+                <VStack spacing={5}>
+                  <FormControl isRequired>
+                    <FormLabel>Name</FormLabel>
+
+                    <InputGroup>
+                    <InputLeftElement>
+                        <BsPerson />
+                      </InputLeftElement>
+                      <Input type="text" name="name" placeholder="Your Name" />
+                    </InputGroup>
+                  </FormControl>
+
+                  <FormControl isRequired>
+                    <FormLabel>Email</FormLabel>
+
+                    <InputGroup>
+                      <InputLeftElement>
+                        <MdOutlineEmail />
+                      </InputLeftElement>
+                      <Input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                      />
+                    </InputGroup>
+                  </FormControl>
+
+                  <FormControl isRequired>
+                    <FormLabel>Message</FormLabel>
+
+                    <Textarea
+                      name="message"
+                      placeholder="Your Message"
+                      rows={6}
+                      resize="none"
                     />
-                    </Link>
-                    <Link as={NextLink} href='https://www.instagram.com/unitmaid/'>
-                    <IconButton
-                      mr={'5'}
-                      aria-label="instagram"
-                      variant="insta"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: 'green.500' }}
-                      icon={<BsInstagram size="28px" />}
-                    />
-                    </Link>
-                    <Link as={NextLink} href='https://twitter.com/unitmaid'>
-                    <IconButton
-                      aria-label="twitter"
-                      variant="twitt"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: 'green.500' }}
-                      icon={<BsTwitter size="28px" />}
-                    />
-                    </Link>
-                  </HStack>
-                  </Box>
-                </Box>
-              </WrapItem>
-              <WrapItem>
-                <Box bg="white" borderRadius="lg">
-                  <Box m={8} color="#0B0E3F">
-                    <VStack spacing={5}>
-                      <FormControl isRequired id="name">
-                        <FormLabel>Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <Input type="text" size="lg" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl isRequired id="name">
-                        <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <Input type="text" size="lg" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl isRequired id="name">
-                        <FormLabel>Message</FormLabel>
-                        <Textarea
-                          borderColor="gray.300"
-                          _hover={{
-                            borderRadius: 'gray.300',
-                          }}
-                          placeholder="message"
-                          size={'lg'}
-                        />
-                      </FormControl>
-                      <FormControl pl={9} id="name" float="right">
-                        <Button
-                          variant="solid"
-                          bg="green"
-                          color="white"
-                          _hover={{}}>
-                          Send Message
-                        </Button>
-                      </FormControl>
-                    </VStack>
-                  </Box>
-                </Box>
-              </WrapItem>
-            </Wrap>
-          </Box>
+                  </FormControl>
+
+                  <Button
+                    colorScheme="green"
+                    bg="green.400"
+                    color="white"
+                    _hover={{
+                      bg: 'green.500',
+                    }}>
+                    Send Message
+                  </Button>
+                </VStack>
+              </Box>
+            </Stack>
+          </VStack>
         </Box>
-      </Flex>
-    </Container>
+      </Box>
+    </Flex>
   );
 }
