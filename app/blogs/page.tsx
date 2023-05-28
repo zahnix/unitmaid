@@ -36,16 +36,13 @@ const Blogs: NextPage = () => {
         `*[_type == "blog" && !(_id in path('drafts.**'))]{
           title,
           slug,
-          image{
-            asset {
-              _ref
-            }
-          },
+          image{asset->{url}},
           content,
           tags
         }`
       );
       setBlogs(fetchedBlogs);
+    
     setHydrated(true);
     };
 
@@ -53,9 +50,24 @@ const Blogs: NextPage = () => {
   }, []);
   if (hydrated) {
     return (
-      <Grid  gap={6} templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)", xl: "repeat(3, 1fr)" }}>
+      <Grid
+        gap={6}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+          xl: "repeat(3, 1fr)",
+        }}
+      >
         {blogs.map((blog) => (
-          <BlogComponent key={blog.slug.current} title={blog.title} image={imgURL(blog.image.asset._ref).url()} slug={blog.slug.current} content={blog.content[0].children[0].text} tags={blog.tags}/>
+          <BlogComponent
+            key={blog.slug.current}
+            title={blog.title}
+            image={imgURL(blog.image.asset.url).url()}
+            slug={blog.slug.current}
+            content={blog.content[0].children[0].text}
+            tags={blog.tags}
+          />
         ))}
       </Grid>
     );
