@@ -43,31 +43,31 @@ const Form1 = () => {
       </Heading>
       
       <Flex>
-        <FormControl mr="5%">
+        <FormControl isRequired mr="5%">
           <FormLabel htmlFor="first-name" fontWeight={'normal'}>
-            First name*
+            First name
           </FormLabel>
           <Input id="first-name" placeholder="First name" />
         </FormControl>
 
-        <FormControl>
+        <FormControl isRequired>
           <FormLabel htmlFor="last-name" fontWeight={'normal'}>
-            Last name*
+            Last name
           </FormLabel>
           <Input id="last-name" placeholder="First name" />
         </FormControl>
       </Flex>
-      <FormControl mt="2%">
+      <FormControl isRequired mt="2%">
         <FormLabel htmlFor="email" fontWeight={'normal'}>
-          Email address*
+          Email address
         </FormLabel>
         <Input id="email" type="email" />
         <FormHelperText>We will never share your email.</FormHelperText>
       </FormControl>
 
-      <FormControl mt="2%">
+      <FormControl isRequired mt="2%">
         <FormLabel htmlFor="email" fontWeight={'normal'}>
-          Phone Number*
+          Phone Number
         </FormLabel>
         <Input id="phone" type="phone" />
       </FormControl>
@@ -117,7 +117,7 @@ const Form1 = () => {
         </Select>
       </FormControl>
 
-      <FormControl as={GridItem} colSpan={6}>
+      <FormControl isRequired as={GridItem} colSpan={6}>
         <FormLabel
           htmlFor="street_address"
           fontSize="sm"
@@ -127,7 +127,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          Unit address*
+          Unit address
         </FormLabel>
         <Input
           type="text"
@@ -142,7 +142,7 @@ const Form1 = () => {
         />
       </FormControl>
 
-      <FormControl as={GridItem} colSpan={[6, 6, null, 2]}>
+      <FormControl isRequired as={GridItem} colSpan={[6, 6, null, 2]}>
         <FormLabel
           htmlFor="city"
           fontSize="sm"
@@ -152,7 +152,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          City*
+          City
         </FormLabel>
         <Input
           type="text"
@@ -177,7 +177,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          State / Province*
+          State / Province
         </FormLabel>
         <Input
           type="text"
@@ -192,7 +192,7 @@ const Form1 = () => {
         />
       </FormControl>
 
-      <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
+      <FormControl isRequired as={GridItem} colSpan={[6, 3, null, 2]}>
         <FormLabel
           htmlFor="postal_code"
           fontSize="sm"
@@ -202,7 +202,7 @@ const Form1 = () => {
             color: 'gray.50',
           }}
           mt="2%">
-          ZIP / Postal*
+          ZIP / Postal
         </FormLabel>
         <Input
           type="text"
@@ -227,7 +227,7 @@ const Form2 = () => {
         Service Details
       </Heading>
 
-      <FormControl as={GridItem} colSpan={[6, 3]}>
+      <FormControl isRequired as={GridItem} colSpan={[6, 3]}>
         <FormLabel
           pt={4}
           htmlFor="unitSize"
@@ -237,7 +237,7 @@ const Form2 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Select Storage Size*
+          Select Storage Size
         </FormLabel>
         <Select
           id="unitSize"
@@ -306,7 +306,7 @@ const Form2 = () => {
       </CheckboxGroup>
       </FormControl>
 
-      <FormControl as='fieldset'>
+      <FormControl isRequired as='fieldset'>
         <FormLabel pt={4}
           htmlFor="unitType"
           fontSize="sm"
@@ -315,7 +315,7 @@ const Form2 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Rate Preference*
+          Rate Preference
         </FormLabel>
         <RadioGroup colorScheme='green' defaultValue='Flat'>
         <HStack spacing='24px'>
@@ -325,7 +325,7 @@ const Form2 = () => {
         </RadioGroup>
       </FormControl>
 
-      <FormControl as='fieldset'>
+      <FormControl isRequired as='fieldset'>
         <FormLabel pt={4}
           htmlFor="unitType"
           fontSize="sm"
@@ -365,7 +365,7 @@ const Form3 = () => {
         Additional Information
       </Heading>
       <SimpleGrid columns={1} spacing={6}>
-      <FormControl as='fieldset'>
+      <FormControl isRequired as='fieldset'>
         <FormLabel pt={4}
           htmlFor="unitType"
           fontSize="sm"
@@ -374,7 +374,7 @@ const Form3 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Rush Service?*
+          Rush Service?
         </FormLabel>
         <RadioGroup colorScheme='green' defaultValue='no'>
         <HStack spacing='24px'>
@@ -384,7 +384,7 @@ const Form3 = () => {
         </RadioGroup>
       </FormControl>
 
-      <FormControl as='fieldset'>
+      <FormControl isRequired as='fieldset'>
         <FormLabel pt={4}
           htmlFor="unitType"
           fontSize="sm"
@@ -393,7 +393,7 @@ const Form3 = () => {
           _dark={{
             color: 'gray.50',
           }}>
-          Project has deadline?*
+          Project has deadline?
         </FormLabel>
         <RadioGroup colorScheme='green' defaultValue='no'>
         <HStack spacing='24px'>
