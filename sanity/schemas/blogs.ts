@@ -9,7 +9,6 @@ const blogs: SchemaTypeDefinition = {
       title: 'Title',
       name: 'title',
       type: 'string',
-      required: true,
     },
     {
       title: 'Slug',
@@ -19,7 +18,6 @@ const blogs: SchemaTypeDefinition = {
         source: 'title',
         maxLength: 200,
       },
-      required: true,
     },
     {
       title: 'Image',
@@ -28,21 +26,18 @@ const blogs: SchemaTypeDefinition = {
       options: {
         hotspot: true,
       },
-      required: true,
     },
     {
       title: 'Content',
       name: 'content',
       type: 'array',
       of: [{ type: 'block' }],
-      required: true,
     },
     {
       title: 'Tags',
       name: 'tags',
       type: 'array',
       of: [{ type: 'string' }],
-      required: true,
     },
   ],
 };
