@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'brown-panther',
 
   projectId: 'ikgxd8km',
-  dataset: 'unitymaid',
+  dataset: 'unitmaid',
 
   plugins: [deskTool(), visionTool()],
 
