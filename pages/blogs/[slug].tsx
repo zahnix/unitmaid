@@ -80,10 +80,10 @@ export default function BlogPage() {
               src={blogData.image.asset.url}
               alt={blogData.title}
               position="absolute"
-              top="30%"
+              top={{base:"11%" ,md:"20%"}}
               width={{ base: "90%", md: "70%" }}
               height={{ base: "400px", md: "650px" }}
-              left={{ base: "5%", md: "13%" }}
+              left={{ base: "5%", md: "15%" }}
             />
           </Box>
           <Box
@@ -95,8 +95,17 @@ export default function BlogPage() {
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
+            
           >
-            <Text>{blogData.content[0].children[0].text}</Text>
+            <Text>{blogData.content
+                ? blogData.content.map((content: any) => (
+                    <Text as="span" key={content._key} color="black">
+                      {content.children[0].text}
+                      <br />
+                    </Text>
+                  ))
+                : "N/A"}
+            </Text>
 
             <Text color="blue.500" mt={2}>
               {" "}

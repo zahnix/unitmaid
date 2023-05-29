@@ -42,6 +42,7 @@ const Blogs: NextPage = () => {
         }`
       );
       setBlogs(fetchedBlogs);
+
     
     setHydrated(true);
     };
