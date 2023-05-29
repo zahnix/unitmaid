@@ -5,7 +5,7 @@ import { sanityClient } from "../sanityclient/client";
 import { useEffect, useState } from "react";
 import { imgURL } from "../sanityclient/image";
 import BlogComponent from "@/components/BlogComponent";
-import { Grid } from "@chakra-ui/react";
+import { Grid,Text,Flex } from "@chakra-ui/react";
 
 
 
@@ -50,6 +50,13 @@ const Blogs: NextPage = () => {
   }, []);
   if (hydrated) {
     return (
+      <Flex
+      align='center'
+      direction='column'
+      >
+      <Text fontSize="4xl" fontWeight="bold" mb={2} color="blue.500">
+        Blogs
+      </Text>
       <Grid
         gap={6}
         templateColumns={{
@@ -61,15 +68,16 @@ const Blogs: NextPage = () => {
       >
         {blogs.map((blog) => (
           <BlogComponent
-            key={blog.slug.current}
+          key={blog.slug.current}
             title={blog.title}
             image={imgURL(blog.image.asset.url).url()}
             slug={blog.slug.current}
             content={blog.content[0].children[0].text}
             tags={blog.tags}
-          />
-        ))}
+            />
+            ))}
       </Grid>
+            </Flex>
     );
   }
   else

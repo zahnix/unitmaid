@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Text, Image ,Button} from "@chakra-ui/react";
-
+import Link from "next/link";
 
 interface BlogProps {
   title: string;
@@ -12,24 +12,54 @@ interface BlogProps {
 
 const BlogComponent: React.FC<BlogProps> = ({ title, content, image, slug,tags }) => {
   return (
-    <Flex direction={{ base: "column", md: "column" }} m={4}  boxShadow="lg" height={{ base: "auto", md:"auto" }} width={{ base: "auto", md: "400px" }}>
-      <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' p={0}>
-          <Image src={image} alt={title} h="250px" w='100%'/>
+    <Flex
+      direction="column"
+      m={4}
+      boxShadow="lg"
+      height={{ base: "550px", md: "500px" }}
+      width={{ base: "auto", md: "400px" }}
+      align="center"
+    >
+      <Box borderWidth="1px" h="250px" w='100%'>
+        <Image src={image} alt={title} height="100%" width="100%" />
       </Box>
-      <Box flex={1} p={3} alignItems='center' display='flex' flexDirection='column' justifyContent='space-between' >
+      <Box
+        p={3}
+        alignItems="center"
+        display="flex"
+        flexDirection="column"
+        justifyContent="space-between"
+        overflow="hidden"
+      >
         <Text fontSize="xl" fontWeight="bold" mb={2}>
           {title}
         </Text>
-        <Text fontSize="sm" fontWeight="bold" mb={2}>
-          Tags: {tags?tags:"N/A"}
+        <Text fontSize="sm" fontWeight="light" mb={2} color="blue.500">
+          Tags: {tags ?
+            tags.map((tag) => (
+              <Text as="span" key={tag} color="blue.500"  >
+                {tag} {" "}
+              </Text>
+            ))
+           : "N/A"}
         </Text>
         <Text>{content}</Text>
-        <Text color="blue.500" mt={2}> {slug} </Text>
-        <Button colorScheme="blue" variant="outline" mt={2}
-          onClick={() => { window.location.href = `/blogs/${slug}`}}>
+        <Text color="blue.500" mt={2}>
+          {" "}
+          {slug}{" "}
+        </Text>
+      </Box>
+      <Link href={`/blogs/${slug}`}>
+        <Button
+          colorScheme="blue"
+          variant="outline"
+          mt={2}
+          _hover={{ bg: "blue.500", color: "white" }}
+          marginBlock="10px"
+        >
           Read More
         </Button>
-      </Box>
+      </Link>
     </Flex>
   );
 };
