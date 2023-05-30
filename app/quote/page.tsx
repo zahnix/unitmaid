@@ -456,7 +456,7 @@ const Form2 = ({ formik }: { formik: FormikProps<FormInitialValues> }) => {
         <RadioGroup
           colorScheme="green"
           value={formik.values.unitType}
-          onChange={formik.handleChange}
+          onChange={(e) => formik.setFieldValue("unitType", e)}
           name="unitType"
         >
           <HStack spacing="24px">
@@ -662,7 +662,7 @@ const Form3 = ({ formik }: { formik: FormikProps<FormInitialValues> }) => {
             colorScheme="green"
             defaultValue="no"
             value={formik.values.rushService}
-            onChange={formik.handleChange}
+            onChange={(e) => formik.setFieldValue("rushService", e)}
             name="rushService"
             onBlur={formik.handleBlur}
           >
@@ -700,7 +700,7 @@ const Form3 = ({ formik }: { formik: FormikProps<FormInitialValues> }) => {
             colorScheme="green"
             defaultValue="no"
             value={formik.values.projectDeadline}
-            onChange={formik.handleChange}
+            onChange={(e) => formik.setFieldValue("projectDeadline", e)}
             name="projectDeadline"
             onBlur={formik.handleBlur}
           >
