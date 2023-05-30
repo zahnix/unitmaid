@@ -22,6 +22,8 @@
     "contentful": "^10.2.1",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "firebase": "^9.22.1",
+    "formik": "^2.4.0",
     "framer-motion": "^10.12.9",
     "next": "13.4.1",
     "react": "18.2.0",
@@ -29,6 +31,11 @@
     "react-icons": "^4.8.0",
     "react-select": "^5.7.3",
     "react-slick": "^0.29.0",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "uuid": "^9.0.0",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.1"
   }
 }
