@@ -55,8 +55,11 @@ const Blogs: NextPage = () => {
       align='center'
       direction='column'
       >
-      <Text fontSize="4xl" fontWeight="bold" mb={2} color="blue.500">
-        Blogs
+      <Text fontSize="4xl" fontWeight="extrabold" mb={1} color="green.500">
+        Uncluttered Life!
+      </Text>
+      <Text textAlign={"center"} fontSize="4l" fontWeight="semibold" mb={2} color="black.500">
+        Ideas, insights, and inspirations to stay organize and Uncluttered
       </Text>
       <Grid
         gap={6}
@@ -78,11 +81,11 @@ const Blogs: NextPage = () => {
             />
             ))}
       </Grid>
-            </Flex>
+      </Flex>
     );
   }
   else
-  return <div>Blog</div>; 
+  return <div>Loading...</div>; 
 };
 
 export default Blogs;

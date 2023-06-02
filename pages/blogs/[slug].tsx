@@ -1,11 +1,14 @@
 "use client"
+import NextLink from 'next/link'
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Button, Badge, Stack, Link, Heading, List, ListItem } from "@chakra-ui/react";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { sanityClient } from "../../app/sanityclient/client";
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer"
+import PortableText from "react-portable-text";
 
 
 export default function BlogPage() {
@@ -44,52 +47,57 @@ export default function BlogPage() {
       <Navbar />
       <div>
         <Flex direction="column" align="center">
+          <Flex pt={6} pb={1}>
+          <Box
+            w={'full'}
+            height={{ base: "400px", md: "500px" }}
+
+          >
+            <Image
+              src={blogData.image.asset.url}
+              alt={blogData.title}
+              
+              objectFit={"cover"}
+              
+              width={{ base: "600", md: "800", sm: "500" }}
+              height={{ base: "400px", md: "500px" }}
+              
+            />
+          </Box>
+          </Flex>
           <Flex
             direction="column"
-            paddingBlock={{ base: "40px", md: "100px" }}
-            backgroundColor="#75c236"
-            height={{ base: "400px", md: "500px" }}
+            paddingBlock={{ base: "30px", md: "50px" }}
+            backgroundColor="#0F8D47"
+            height={{ base: "200px", md: "300px" }}
             w="100%"
-            padding="20%"
+            padding="10%"
             textAlign="center"
           >
             <Text
-              fontWeight="medium"
+              fontWeight="bold"
               mb={2}
               color="white"
-              fontSize={{ base: "26px", md: "40px" }}
+              fontSize={{ base: "24px", md: "40px" }}
             >
               {blogData.title}
             </Text>
 
-            <Text fontSize="sm" fontWeight="bold" mb={2} color="white">
+            <Text fontSize="md" fontWeight="medium" mb={2} color="green">
               {blogData.tags
                 ? blogData.tags.map((tag: string) => (
-                    <Text as="span" key={tag} color="white">
+                    <Badge as="span" key={tag} color="green" m={2}>
                       {tag} {" "}
-                    </Text>
+                    </Badge>
                   ))
                 : "N/A"}
             </Text>
           </Flex>
           <Box
-            width={{ base: "100%", md: "70%" }}
-            height={{ base: "400px", md: "550px" }}
-          >
-            <Image
-              src={blogData.image.asset.url}
-              alt={blogData.title}
-              position="absolute"
-              top={{base:"11%" ,md:"20%"}}
-              width={{ base: "90%", md: "70%" }}
-              height={{ base: "400px", md: "650px" }}
-              left={{ base: "5%", md: "15%" }}
-            />
-          </Box>
-          <Box
             flex={1}
             width={{ base: "100%", md: "70%" }}
             alignSelf={{ base: "center", md: "center" }}
+            mt={4}
             p={3}
             alignItems="center"
             display="flex"
@@ -97,23 +105,67 @@ export default function BlogPage() {
             justifyContent="space-between"
             
           >
-            <Text>{blogData.content
-                ? blogData.content.map((content: any) => (
-                    <Text as="span" key={content._key} color="black">
-                      {content.children[0].text}
-                      <br />
-                    </Text>
-                  ))
-                : "N/A"}
-            </Text>
-
-            <Text color="blue.500" mt={2}>
-              {" "}
-              {slug}{" "}
-            </Text>
+            <PortableText
+              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
+              projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
+              content={blogData.content}
+              serializers={{
+                h1:(props: any) => (
+                  <Heading textAlign={"center"} as='h1' size='4xl' noOfLines={1} mb={32} mt={32}
+                  {...props}
+                  />
+                ),
+                h2:(props: any) => (
+                  <Heading textAlign={"center"} as='h2' size='3xl' noOfLines={1} mb={24} mt={24}
+                  {...props}
+                  />
+                ),
+                h3:(props: any) => (
+                  <Heading textAlign={"center"} as='h3' size='lg' mb={18} mt={18}
+                  {...props}
+                  />
+                ),
+                h4:(props: any) => (
+                  <Heading textAlign={"center"} as='h4' size='md' mb={10} mt={10}
+                  {...props}
+                  />
+                ),
+                
+                li:({children}: any) => (
+                  <List spacing={3}><ListItem>{children}</ListItem></List>
+                ),
+                link:({href, children}: any) => (
+                  <a href={href} color="orange" >{children}</a>
+                ),
+                underline:({children}: any) => (
+                  <li color="brown">{children}</li>
+                ),
+                strong:({children}: any) => (
+                  <Text as="b" color="green-500">{children}</Text>
+                ),
+                em:({children}: any) => (
+                  <Text as='mark' backgroundColor='#48BB78'>{children}</Text>
+ 
+                ),
+              }}
+            />
           </Box>
+          <Stack alignItems={"center"} direction={{ base: 'column', md: 'row' }} spacing={4} m={6}>
+            <Link as={NextLink} href='/quote'>
+            <Button
+              rounded={'full'}
+              bg={'gray.500'}
+              color={'white'}
+              _hover={{
+                bg: 'green.600',
+              }}>
+              Get a Quote
+            </Button>
+            </Link>
+          </Stack>
         </Flex>
       </div>
+      <Footer/>
     </ChakraProvider>
   );
 }
