@@ -212,8 +212,8 @@ export default function Pricing() {
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-            <Link as={NextLink} href='/signin'>
-              <Button w="full" colorScheme="green" variant="outline">
+            <Link as={NextLink} href='#'>
+              <Button isDisabled w="full" colorScheme="green" variant="outline">
                 Coming Soon
               </Button>
             </Link>
