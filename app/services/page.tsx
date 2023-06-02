@@ -135,7 +135,7 @@ export default function Services() {
                 <List spacing={2}>
                   <ListItem>Storage Unit Consigment</ListItem>
                   <ListItem>Storage Unit Locksmith</ListItem>{' '}
-                  <ListItem>Storage Unit key management</ListItem>
+                  <ListItem>Storage Unit Key Management</ListItem>
                   <ListItem>Storage Unit Pest Control</ListItem>
                   <ListItem>Storage Unit Heavy Item Removal</ListItem>
                   <ListItem>Storage Unit Document Store</ListItem>

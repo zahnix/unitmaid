@@ -116,17 +116,17 @@ export default function BlogPage() {
                   />
                 ),
                 h2:(props: any) => (
-                  <Heading textAlign={"center"} as='h2' size='3xl' noOfLines={1} mb={24} mt={24}
+                  <Heading textAlign={"center"} as='h2' size='3xl' noOfLines={1} mb={12} mt={16}
                   {...props}
                   />
                 ),
                 h3:(props: any) => (
-                  <Heading textAlign={"center"} as='h3' size='lg' mb={18} mt={18}
+                  <Heading textAlign={"center"} as='h3' size='2xl' mb={6} mt={10}
                   {...props}
                   />
                 ),
                 h4:(props: any) => (
-                  <Heading textAlign={"center"} as='h4' size='md' mb={10} mt={10}
+                  <Heading textAlign={"center"} as='h4' size='xl' mb={6} mt={10}
                   {...props}
                   />
                 ),
