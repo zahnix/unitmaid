@@ -1,5 +1,6 @@
 "use client"
 
+import {useRouter} from 'next/navigation'
 import {
   Box,
   Button,
@@ -25,6 +26,7 @@ import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 
 export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('support@unitmaid.com');
+  const router = useRouter();
 
   return (
     <Flex
@@ -161,6 +163,7 @@ export default function ContactFormWithSocialButtons() {
                   </FormControl>
 
                   <Button
+                    onClick={() => router.push('mailto:support@unitmaid.com')}
                     colorScheme="green"
                     bg="green.400"
                     color="white"

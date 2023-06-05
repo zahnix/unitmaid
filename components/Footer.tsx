@@ -42,7 +42,7 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>Services</ListHeader>
             <Stack direction={'row'} align={'center'} spacing={2}>
-              <Link href={'#'}>Clean & Organize</Link>
+              <Link href={'/quote'}>Clean & Organize</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('red.300', 'red.800')}
@@ -52,7 +52,7 @@ export default function Footer() {
               </Tag>
             </Stack>
             <Stack direction={'row'} align={'center'} spacing={2}>
-              <Link href={'#'}>Inventory Management</Link>
+              <Link href={'/quote'}>Inventory Management</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('green.300', 'green.800')}
@@ -63,7 +63,7 @@ export default function Footer() {
             </Stack>
             <Link href={'#'}>Relocation</Link>
             <Stack direction={'row'} align={'center'} spacing={2}>
-              <Link href={'#'}>Pick-ups</Link>
+              <Link href={'/quote'}>Pick-ups</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('green.300', 'green.800')}
@@ -72,7 +72,7 @@ export default function Footer() {
                 Popular
               </Tag>
             </Stack>
-            <Link href={'#'}>Donations & Disposal</Link>
+            <Link href={'/quote'}>Donations & Disposal</Link>
             <Stack direction={'row'} align={'center'} spacing={2}>
               <Link href={'#'}>Consignment & Others</Link>
               <Tag
@@ -86,10 +86,10 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Blog</Link>
+            <Link href={'/about'}>About Us</Link>
+            <Link href={'/blogs'}>Blog</Link>
             <Stack direction={'row'} align={'center'} spacing={2}>
-            <Link href={'#'}>Careers</Link>
+            <Link href={'/contact'}>Careers</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('yellow.300', 'yellow.800')}
@@ -98,15 +98,13 @@ export default function Footer() {
                 Hiring
               </Tag>
             </Stack>
-            <Link href={'#'}>Contact Us</Link>
-            <Link href={'#'}>Partners</Link>
+            <Link href={'/contact'}>Contact Us</Link>
+            <Link href={'/contact'}>Partners</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Legal</ListHeader>
             <Link href={'/privacy'}>Privacy Policy</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Law Enforcement</Link>
-            <Link href={'#'}>Status</Link>
+            <Link href={'/tos'}>Terms of Service</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
@@ -114,7 +112,6 @@ export default function Footer() {
             <Link href={'https://twitter.com/unitmaid'}>Twitter</Link>
             <Link href={'https://www.instagram.com/unitmaid/'}>Instagram</Link>
             <Link href={'https://www.youtube.com/@unitmaid'}>Youtube</Link>
-            <Link href={'#'}>LinkedIn</Link>
           </Stack>
         </SimpleGrid>
       </Container>
