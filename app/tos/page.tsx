@@ -191,6 +191,7 @@ export default function Privacy() {
               We accept the following forms of payment:
             </Text>
               <List pt={'4'} spacing={2}>
+                  <ListItem>- Cash</ListItem>
                   <ListItem>- Visa</ListItem>
                   <ListItem>- Mastercard</ListItem>
                   <ListItem>- American Express</ListItem>
