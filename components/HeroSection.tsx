@@ -58,7 +58,7 @@ export default function HeroSection() {
         />
           </Heading>
           <Text paddingTop={-2}fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-            Garage, Storage unit, Warehouse, or Office clean out, and organization services.
+            The Clean out, and Organization service for Garages, Storage Units, Warehouses, and Offices.
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Link as={NextLink} href='/quote'>
