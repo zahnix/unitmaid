@@ -38,7 +38,7 @@ export default function Pricing() {
         Simplify your storage with UnitMaid
         </Heading>
         <Text fontSize="lg" color={'gray.500'}>
-        The experts in organization, cleanliness, and all thing storage.
+        The experts in clean outs, organization, and all thing storage.
         </Text>
       </VStack>
       <Stack
@@ -77,7 +77,7 @@ export default function Pricing() {
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                Cleaning
+                Clean out
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
@@ -140,7 +140,7 @@ export default function Pricing() {
               <List spacing={3} textAlign="start" px={12}>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Cleaning
+                  Clean out
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />

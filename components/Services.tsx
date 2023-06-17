@@ -70,7 +70,7 @@ export default function Services() {
           content='center'
         />
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-        UnitMaid provides various storage management services, including cleaning, organization, and relocation. We also offer a pick-up service to add more items to the storage unit. Our services will help individuals and businesses efficiently manage their storage needs.
+        UnitMaid provides various storage management services, including clean out, organization, and relocation. We also offer a pick-up service to add more items to the storage unit. Our services will help individuals and businesses efficiently manage their storage needs.
         </Text>
       </Stack>
 
@@ -80,7 +80,7 @@ export default function Services() {
             heading={'Unit Cleaning and Organization'}
             icon={<Icon as={FcOrganization} w={10} h={10} />}
             description={
-              'We offer professional cleaning services to ensure your units are always clean and free of dust, dirt, and debris. Our team of experts uses high-quality products and equipment to ensure that your unit is spotless and will categorize and arrange items according to your preferences and needs.'
+              'We offer professional clean out services to free your storage of all clutters and excess uneeded items. Our team of experts uses high-quality equipment and tools to ensure that your unit is spotless and will categorize and arrange items according to your preferences and needs.'
             }
             href={'#'}
           />

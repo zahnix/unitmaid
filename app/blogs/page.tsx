@@ -59,7 +59,7 @@ const Blogs: NextPage = () => {
         Uncluttered Life!
       </Text>
       <Text textAlign={"center"} fontSize="4l" fontWeight="semibold" mb={2} color="black.500">
-        Ideas, insights, and inspirations to stay organize and Uncluttered
+        Ideas, insights, and inspirations to stay Organize and Uncluttered
       </Text>
       <Grid
         gap={6}

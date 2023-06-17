@@ -54,7 +54,7 @@ export default function AboutUs() {
                 Storage Unit Management
               </Heading>
               <Text fontSize={'xl'} color={'gray.400'}>
-              UnitMaid™ customized, affordable, and comprehensive storage management solutions prioritize sustainability and accessibility, while delivering exceptional customer service and convenience.
+              UnitMaid™ customized, affordable, and comprehensive garage, storage unit, warehouse and office clean out and organization services.
               </Text>
             </Box>
 
@@ -93,7 +93,7 @@ const stats = [
     title: 'Affordable',
     content: (
       <>
-        <StatsText>Storage Cleaning</StatsText> We are committed to providing the highest quality cleaning and organizing services. Our expert team will clean and dust off debris that may have accumulated over time.
+        <StatsText>Storage Cleaning</StatsText> We are committed to providing the highest quality clean out and organizing services. Our expert team will clear out and dust off your unit.
       </>
     ),
   },
@@ -110,7 +110,7 @@ const stats = [
     title: 'Regional',
     content: (
       <>
-        <StatsText>Relocation Assistance</StatsText> Whether you are moving your belongings into or out of storage, we make the process quick and easy.
+        <StatsText>Relocation Assistance</StatsText> Whether you are moving your belongings into or out of a garage, storage unit, warehouse or office, we make the process quick and easy.
       </>
     ),
   },
@@ -118,7 +118,7 @@ const stats = [
     title: '24/7',
     content: (
       <>
-        <StatsText>Pickup Services</StatsText> We will come to your home or office to pick up any items you need to store. We will do the heaving lifting, while you sit back and relax.
+        <StatsText>Pickup Services</StatsText> We will come to your home, office, or storage facility to pick up any items you need to store. We will do the heaving lifting, while you sit back and relax.
       </>
     ),
   },

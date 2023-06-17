@@ -562,7 +562,7 @@ const Form2 = ({ formik }: { formik: FormikProps<FormInitialValues> }) => {
           onChange={(e) => formik.setFieldValue("serviceInterestedIn", e)}
         >
           <Stack spacing={[2, 4]} direction={["column"]}>
-            <Checkbox value="clean">Cleaning</Checkbox>
+            <Checkbox value="clean">Clean Out</Checkbox>
             <Checkbox value="organize">Organization</Checkbox>
             <Checkbox value="relocate">Relocation</Checkbox>
             <Checkbox value="inventory">Iventory Management</Checkbox>
@@ -1002,7 +1002,7 @@ export default function Quote() {
           UnitMaid Service Inquiry Form
         </Heading>
         <Text fontSize="lg" color={"gray.500"}>
-          The experts in organization, cleanliness, and all things storage.
+          The experts in clean out, organization, and all things storage.
         </Text>
       </VStack>
       <Box

@@ -42,7 +42,7 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>Services</ListHeader>
             <Stack direction={'row'} align={'center'} spacing={2}>
-              <Link href={'/quote'}>Clean & Organize</Link>
+              <Link href={'/quote'}>Clean out & Organization</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('red.300', 'red.800')}
@@ -112,6 +112,7 @@ export default function Footer() {
             <Link href={'https://twitter.com/unitmaid'}>Twitter</Link>
             <Link href={'https://www.instagram.com/unitmaid/'}>Instagram</Link>
             <Link href={'https://www.youtube.com/@unitmaid'}>Youtube</Link>
+            <Link href={'https://www.pinterest.com/unitmaid'}>Pinterest</Link>
           </Stack>
         </SimpleGrid>
       </Container>

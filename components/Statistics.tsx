@@ -54,12 +54,12 @@ export default function Statistics() {
         fontSize={'4xl'}
         py={10}
         fontWeight={'bold'}>
-        Our company is Cleaning and Organizing, let us help you too!
+        Our company is Cleaning out and Organizing, let us help you too!
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
-          title={'Units Cleaned'}
-          stat={'10'}
+          title={'Units Clean out'}
+          stat={'100'}
           icon={<FaWarehouse size={'3em'} />}
         />
         <StatsCard
@@ -69,7 +69,7 @@ export default function Statistics() {
         />
         <StatsCard
           title={'Consigned'}
-          stat={'17'}
+          stat={'170'}
           icon={<FaTruckLoading size={'3em'} />}
         />
       </SimpleGrid>

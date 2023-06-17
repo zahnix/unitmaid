@@ -58,7 +58,7 @@ export default function Services() {
               color={useColorModeValue('gray.900', 'gray.400')}
               fontWeight={300}
               fontSize={'2xl'}>
-              Storage Unit Management and Cleaning Solutions
+              Storage Unit Management and Clean out and Organizations Solutions
             </Text>
           </Box>
 
@@ -75,7 +75,7 @@ export default function Services() {
                 color={useColorModeValue('gray.500', 'gray.400')}
                 fontSize={'2xl'}
                 fontWeight={'300'}>
-                We are a Northern Virginia professional storage cleaning service company that offers a range of services to help you manage your storage unit, garage, warehouse, and office. UnitMaid provides comprehensive solutions tailored to the specific needs of each client. Whether it is cleaning out clutter, categorizing and organizing items, or relocating belongings to a new unit, UnitMaid aims to simplify the storage management process and provide a hassle-free experience for our customers. 
+                We are a Northern Virginia professional storage clean out service company that offers a range of services to help you manage your storage unit, garage, warehouse, and office. UnitMaid provides comprehensive solutions tailored to the specific needs of each client. Whether it is cleaning out clutter, categorizing and organizing items, or relocating belongings to a new unit, UnitMaid aims to simplify the storage management process and provide a hassle-free experience for our customers. 
               </Text>
             </VStack>
             <Box>
@@ -90,32 +90,32 @@ export default function Services() {
               <List spacing={2}>
                 <ListItem>
                   <Text as={'span'} fontWeight={'bold'}>
-                  Storage Unit Cleaning
+                  Unit Clean out
                   </Text>
                 </ListItem>
                 <ListItem>
                   <Text as={'span'} fontWeight={'bold'}>
-                  Storage Unit Organizing
+                  Unit Organizing
                   </Text>
                 </ListItem>
                 <ListItem>
                   <Text as={'span'} fontWeight={'bold'}>
-                  Storage Unit Relocation
+                  Unit Relocation
                   </Text>
                 </ListItem>
                 <ListItem>
                   <Text as={'span'} fontWeight={'bold'}>
-                  Storage Unit Recycling and Disposal
+                  Unit Recycling and Disposal
                   </Text>
                 </ListItem>
                 <ListItem>
                   <Text as={'span'} fontWeight={'bold'}>
-                  Storage Unit Pickup and Store
+                  Unit Pickup and Store
                   </Text>
                 </ListItem>
                 <ListItem>
                   <Text as={'span'} fontWeight={'bold'}>
-                  Storage Unit Iventory Management
+                  Unit Iventory Management
                   </Text>
                 </ListItem>
               </List>
@@ -133,12 +133,12 @@ export default function Services() {
 
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                 <List spacing={2}>
-                  <ListItem>Storage Unit Consigment</ListItem>
-                  <ListItem>Storage Unit Locksmith</ListItem>{' '}
-                  <ListItem>Storage Unit Key Management</ListItem>
-                  <ListItem>Storage Unit Pest Control</ListItem>
-                  <ListItem>Storage Unit Heavy Item Removal</ListItem>
-                  <ListItem>Storage Unit Document Store</ListItem>
+                  <ListItem>Unit Consigment</ListItem>
+                  <ListItem>Unit Locksmith</ListItem>{' '}
+                  <ListItem>Unit Key Management</ListItem>
+                  <ListItem>Unit Pest Control</ListItem>
+                  <ListItem>Unit Heavy Item Removal</ListItem>
+                  <ListItem>Unit Document Store</ListItem>
                 </List>
               </SimpleGrid>
             </Box>
