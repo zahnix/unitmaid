@@ -77,7 +77,7 @@ export default function Services() {
       <Container maxW={'5xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
-            heading={'Unit Cleaning and Organization'}
+            heading={'Unit Clean Out and Organization'}
             icon={<Icon as={FcOrganization} w={10} h={10} />}
             description={
               'We offer professional clean out services to free your storage of all clutters and excess uneeded items. Our team of experts uses high-quality equipment and tools to ensure that your unit is spotless and will categorize and arrange items according to your preferences and needs.'
